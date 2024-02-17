@@ -1,0 +1,24 @@
+#  Loosely based on https://github.com/aardappel/lobster/blob/master/.gitignore
+
+*.o
+*~
+
+*.suo
+*.vcxproj.user
+/.vscode
+*.code-workspace
+
+*.lbc
+*.exp
+*.iobj
+*.ipdb
+*.a
+*.pdb
+*.ilk
+*.bmp
+
+*.tmp
+
+/.idea/
+
+/build/
