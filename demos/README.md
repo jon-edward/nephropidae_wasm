@@ -3,8 +3,10 @@
 ## [Cube](https://jon-edward.github.io/nephropidae_wasm/demos/cube)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/cube.lobster](https://github.com/aardappel/lobster/blob/master/samples/cube.lobster). 
 
+[Demo](https://jon-edward.github.io/nephropidae_wasm/demos/cube)
+
 <details open>
-<summary>Description</summary>
+<summary>Docstring</summary>
 <pre>
 This example renders a cube with a different colorèd number on each face.
 Moving the mouse or WASD rotates the viewport around the cube like turning a
@@ -64,8 +66,10 @@ Kris Kowal &lt;kris@cixar.com&gt;</pre>
 ## [LobsterCraft](https://jon-edward.github.io/nephropidae_wasm/demos/lobstercraft/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/lobstercraft.lobster](https://github.com/aardappel/lobster/blob/master/samples/lobstercraft.lobster).
 
+[Demo](https://jon-edward.github.io/nephropidae_wasm/demos/lobstercraft/)
+
 <details open>
-<summary>Description</summary>
+<summary>Docstring</summary>
 <pre>
 A minecraft clone in very few lines of code implements random world generation, 
 chunks, rendering, and mining/building of blocks created in response to https://github.com/fogleman/Minecraft 
@@ -76,8 +80,10 @@ chunks, rendering, and mining/building of blocks created in response to https://
 ## [Pendulum](https://jon-edward.github.io/nephropidae_wasm/demos/pendulum/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/pendulum.lobster](https://github.com/aardappel/lobster/blob/master/samples/pendulum.lobster). 
 
+[Demo](https://jon-edward.github.io/nephropidae_wasm/demos/pendulum/)
+
 <details open>
-<summary>Description</summary>
+<summary>Docstring</summary>
 <pre>
 based on: http://www.physicsandbox.com/projects/double-pendulum.html</pre>
 </details>
@@ -85,6 +91,8 @@ based on: http://www.physicsandbox.com/projects/double-pendulum.html</pre>
 
 ## [Physics Boxes](https://jon-edward.github.io/nephropidae_wasm/demos/physics_boxes/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/physics_boxes.lobster](https://github.com/aardappel/lobster/blob/master/samples/physics_boxes.lobster). 
+
+[Demo](https://jon-edward.github.io/nephropidae_wasm/demos/physics_boxes/)
 
 <details open>
 <summary>Docstring</summary>
@@ -96,6 +104,8 @@ Showing off physics features in Lobster</pre>
 ## [Physics Water](https://jon-edward.github.io/nephropidae_wasm/demos/physics_water/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/physics_water.lobster](https://github.com/aardappel/lobster/blob/master/samples/physics_water.lobster). 
 
+[Demo](https://jon-edward.github.io/nephropidae_wasm/demos/physics_water/)
+
 <details open>
 <summary>Docstring</summary>
 <pre>
@@ -105,6 +115,8 @@ Showing off physics features in Lobster</pre>
 
 ## [PythTree](https://jon-edward.github.io/nephropidae_wasm/demos/pythtree/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/pythtree.lobster](https://github.com/aardappel/lobster/blob/master/samples/pythtree.lobster). 
+
+[Demo](https://jon-edward.github.io/nephropidae_wasm/demos/pythtree/)
 
 <details open>
 <summary>Docstring</summary>
