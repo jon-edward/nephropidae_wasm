@@ -12,6 +12,11 @@ jobs:
         
         steps:
             - uses: actions/checkout@v3
+
+            - name: Update and install OpenGL
+              run: |
+                sudo apt-get -y update
+                sudo apt-get -y install libglu1-mesa-dev freeglut3-dev mesa-common-dev
             
             - name: Set up Python
               uses: actions/setup-python@v3
