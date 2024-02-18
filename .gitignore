@@ -24,3 +24,5 @@
 /build/
 
 *.lpak
+
+# /emscripten/
