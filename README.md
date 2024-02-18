@@ -2,7 +2,7 @@
 This is a simple example that demonstrates building a Lobster project to WebAssembly. 
 
 ## Demo
-Check out the [live demo](https://jon-edward.github.io/nephropidae_wasm/emscripten/).
+Check out the [live demos](https://jon-edward.github.io/nephropidae_wasm/demos/).
 
 ## Requirements
 You need a [built binary](http://aardappel.github.io/lobster/getting_started.html) of the [Lobster](https://github.com/aardappel/lobster) language, Python 3.10+, and [Emscripten](https://emscripten.org/docs/getting_started/) added to PATH.
