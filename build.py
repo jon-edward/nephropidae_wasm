@@ -57,6 +57,7 @@ def main(
         ShellCommand("make", "-j8", cwd=wasm_root),
         ShellCommand("cp", "-a", f"{wasm_root}/.", out_dir),
         ShellCommand("cp", html, out_dir.joinpath("index.html")),
+        ShellCommand("cp", "-a", f"{lobster_root.joinpath("data")}/.", out_dir.joinpath("data"))
     ]
 
     if serve:
@@ -77,6 +78,7 @@ def main(
         print()
 
         os.makedirs(out_dir, exist_ok=True)
+        os.makedirs(out_dir.joinpath("data"), exist_ok=True)
 
         for command in commands:
             command.run()
