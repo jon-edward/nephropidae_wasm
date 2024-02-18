@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
+import os
 from pathlib import Path
 import shlex
-import shutil
 import subprocess
 from typing import Iterable, Union, Optional, List
 
@@ -55,7 +55,7 @@ def main(
     commands = [
         ShellCommand(lobster_executable, "--cpp", entry),
         ShellCommand("make", "-j8", cwd=wasm_root),
-        ShellCommand("cp", "-r", wasm_root, out_dir),
+        ShellCommand("cp", "-a", f"{wasm_root}/.", out_dir),
         ShellCommand("cp", html, out_dir.joinpath("index.html")),
     ]
 
@@ -76,10 +76,7 @@ def main(
     if not no_run:
         print()
 
-        try:
-            shutil.rmtree(out_dir)
-        except FileNotFoundError:
-            pass
+        os.makedirs(out_dir, exist_ok=True)
 
         for command in commands:
             command.run()
@@ -119,7 +116,7 @@ if __name__ == "__main__":
         "--out-dir",
         type=Path,
         help="The output directory for HTML, WASM, JS, etc.",
-        default=Path("./emscripten"),
+        default=Path("./build"),
     )
 
     parser.add_argument(
