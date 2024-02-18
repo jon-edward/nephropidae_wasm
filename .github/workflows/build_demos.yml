@@ -65,6 +65,11 @@ jobs:
                 source ./emsdk/emsdk_env.sh
                 python3 build.py --entry ./demos/pythtree/main.lobster --out-dir ./demos/pythtree --lobster ./lobster
             
+            - name: Clean up cloned repositories
+              run: |
+                rm -rf ./lobster
+                rm -rf ./emsdk
+            
             - name: Setup Pages
               id: pages
               uses: actions/configure-pages@v3
