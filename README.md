@@ -10,6 +10,6 @@ You need a [built binary](http://aardappel.github.io/lobster/getting_started.htm
 ## Usage
 [`build.py`](build.py) is the entry point for building a Lobster project to WASM. In the simplest case, you can build your Lobster script (`src/main.lobster`) with `python3 build.py`.
 
-Optionally, you can start an HTTP server from `emscripten/` on `http://127.0.0.1:8080/` after building has completed with the command `python3 build.py --serve`.
+Optionally, you can start an HTTP server from `build/` on `http://127.0.0.1:8080/` after building has completed with the command `python3 build.py --serve`.
 
 See `python3 build.py --help` for other usage.
