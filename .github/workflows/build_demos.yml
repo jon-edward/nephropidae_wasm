@@ -38,31 +38,31 @@ jobs:
             - name: Build cube
               run: |
                 source ./emsdk/emsdk_env.sh
-                python3 build.py --entry ./demos/cube/main.lobster --out-dir ./demos/cube --lobster ./lobster/bin/lobster
+                python3 build.py --entry ./demos/cube/main.lobster --out-dir ./demos/cube --lobster ./lobster
             
             - name: Build lobstercraft
               run: |
                 source ./emsdk/emsdk_env.sh
-                python3 build.py --entry ./demos/lobstercraft/main.lobster --out-dir ./demos/lobstercraft --lobster ./lobster/bin/lobster
+                python3 build.py --entry ./demos/lobstercraft/main.lobster --out-dir ./demos/lobstercraft --lobster ./lobster
             
             - name: Build pendulum
               run: |
                 source ./emsdk/emsdk_env.sh
-                python3 build.py --entry ./demos/pendulum/main.lobster --out-dir ./demos/pendulum --lobster ./lobster/bin/lobster
+                python3 build.py --entry ./demos/pendulum/main.lobster --out-dir ./demos/pendulum --lobster ./lobster
             
 
             - name: Build physics_boxes
               run: |
                 source ./emsdk/emsdk_env.sh
-                python3 build.py --entry ./demos/physics_boxes/main.lobster --out-dir ./demos/physics_boxes --lobster ./lobster/bin/lobster
+                python3 build.py --entry ./demos/physics_boxes/main.lobster --out-dir ./demos/physics_boxes --lobster ./lobster
             
             - name: Build physics_water
               run: |
                 source ./emsdk/emsdk_env.sh
-                python3 build.py --entry ./demos/physics_water/main.lobster --out-dir ./demos/physics_water --lobster ./lobster/bin/lobster
+                python3 build.py --entry ./demos/physics_water/main.lobster --out-dir ./demos/physics_water --lobster ./lobster
             
             - name: Build pythtree
               run: |
                 source ./emsdk/emsdk_env.sh
-                python3 build.py --entry ./demos/pythtree/main.lobster --out-dir ./demos/pythtree --lobster ./lobster/bin/lobster
+                python3 build.py --entry ./demos/pythtree/main.lobster --out-dir ./demos/pythtree --lobster ./lobster
             
