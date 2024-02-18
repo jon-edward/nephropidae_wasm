@@ -1,6 +1,6 @@
 # Demos
 
-## [`cube`](https://jon-edward.github.io/nephropidae_wasm/demos/cube)
+## [Cube](https://jon-edward.github.io/nephropidae_wasm/demos/cube)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/cube.lobster](https://github.com/aardappel/lobster/blob/master/samples/cube.lobster). 
 
 <details open>
@@ -61,7 +61,7 @@ Numbers read counter-clockwise about the origin and its opposite vertex.
 Kris Kowal &lt;kris@cixar.com&gt;</pre>
 </details>
 
-## [`lobstercraft`](https://jon-edward.github.io/nephropidae_wasm/demos/lobstercraft/)
+## [LobsterCraft](https://jon-edward.github.io/nephropidae_wasm/demos/lobstercraft/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/lobstercraft.lobster](https://github.com/aardappel/lobster/blob/master/samples/lobstercraft.lobster).
 
 <details open>
@@ -73,7 +73,7 @@ chunks, rendering, and mining/building of blocks created in response to https://
 </pre>
 </details>
 
-## [`pendulum`](https://jon-edward.github.io/nephropidae_wasm/demos/pendulum/)
+## [Pendulum](https://jon-edward.github.io/nephropidae_wasm/demos/pendulum/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/pendulum.lobster](https://github.com/aardappel/lobster/blob/master/samples/pendulum.lobster). 
 
 <details open>
@@ -83,7 +83,7 @@ based on: http://www.physicsandbox.com/projects/double-pendulum.html</pre>
 </details>
 
 
-## [`physics_boxes`](https://jon-edward.github.io/nephropidae_wasm/demos/physics_boxes/)
+## [Physics Boxes](https://jon-edward.github.io/nephropidae_wasm/demos/physics_boxes/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/physics_boxes.lobster](https://github.com/aardappel/lobster/blob/master/samples/physics_boxes.lobster). 
 
 <details open>
@@ -93,7 +93,7 @@ Showing off physics features in Lobster</pre>
 </details>
 
 
-## [`physics_water`](https://jon-edward.github.io/nephropidae_wasm/demos/physics_water/)
+## [Physics Water](https://jon-edward.github.io/nephropidae_wasm/demos/physics_water/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/physics_water.lobster](https://github.com/aardappel/lobster/blob/master/samples/physics_water.lobster). 
 
 <details open>
@@ -103,7 +103,7 @@ Showing off physics features in Lobster</pre>
 </details>
 
 
-## [`pythtree`](https://jon-edward.github.io/nephropidae_wasm/demos/pythtree/)
+## [PythTree](https://jon-edward.github.io/nephropidae_wasm/demos/pythtree/)
 Taken from [https://github.com/aardappel/lobster/blob/master/samples/pythtree.lobster](https://github.com/aardappel/lobster/blob/master/samples/pythtree.lobster). 
 
 <details open>
