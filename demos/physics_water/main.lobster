@@ -31,7 +31,7 @@ let boxes = map 5:
 
 ph.create_particle_circle(float2 { 0.0, 5.0 }, 7.0, color_red, ph.colormixingparticle)
 
-while gl.frame() and gl.button("escape") != 1:
+while gl.frame():
     gl.clear(color_black)
 
     // create right-handed coordinate system, with (0, 0) at the bottom middle

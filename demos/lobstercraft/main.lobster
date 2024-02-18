@@ -52,7 +52,6 @@ def generate_mesh(ci):
 forxyz(lssize / csize) v: generate_mesh(v)
 
 while gl.frame():
-    if gl.button("escape") == 1: return
     gl.clear(color_light_blue)
     gl.cursor(false)
     gl.perspective(70.0, 0.1, 1000.0)

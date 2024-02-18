@@ -16,7 +16,7 @@ var boxes = []
 
 var boxtime = 0.0
 
-while gl.frame() and gl.button("escape") != 1:
+while gl.frame():
     gl.clear(color_black)
 
     // create right-handed coordinate system, with (0, 0) at the bottom middle

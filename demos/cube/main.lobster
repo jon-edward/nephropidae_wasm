@@ -131,7 +131,7 @@ def camera_GPS_update(upkey, leftkey, downkey, rightkey, elevation:float, mouses
     camera.pitch = min(85.0, max(-85.0, camera.pitch))
     camera.position = vecfromyawpitch(camera.yaw, camera.pitch, -elevation, 0.0)
 
-while gl.frame() and not gl.button("escape"):
+while gl.frame():
     gl.clear(color_dark_grey)
     gl.cursor(false)
     gl.perspective(60.0, 0.1, 1000.0)

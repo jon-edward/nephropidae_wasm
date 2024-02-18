@@ -58,7 +58,6 @@ let pendula = map(5) i:
 
 fatal(gl.window("double pendulum", 700, 700))
 while gl.frame():
-    if gl.button("escape") == 1: return
     gl.clear(color_black)
     let time = gl.delta_time() * 4.0
     for(pendula) p:
