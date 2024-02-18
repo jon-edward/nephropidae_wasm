@@ -1,0 +1,63 @@
+name: Build Lobster WASM demos
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - uses: actions/checkout@v3
+            
+            - name: Set up Python
+              uses: actions/setup-python@v3
+            
+            - name: Clone and activate Emscripten
+              run: |
+                git clone https://github.com/emscripten-core/emsdk.git
+                cd emsdk
+                ./emsdk install latest
+                ./emsdk activate latest
+            
+            - name: Clone and build Lobster
+              run: |
+                git clone https://github.com/aardappel/lobster.git
+                cd lobster/dev
+                cmake -DCMAKE_BUILD_TYPE=Release
+                make -j8
+            
+            - name: Build cube
+              run: |
+                source ./emsdk_env.sh
+                python3 build.py --entry ./demos/cube/main.lobster --out-dir ./demos/cube --lobster ./lobster/bin/lobster
+            
+            - name: Build lobstercraft
+              run: |
+                source ./emsdk_env.sh
+                python3 build.py --entry ./demos/lobstercraft/main.lobster --out-dir ./demos/lobstercraft --lobster ./lobster/bin/lobster
+            
+            - name: Build pendulum
+              run: |
+                source ./emsdk_env.sh
+                python3 build.py --entry ./demos/pendulum/main.lobster --out-dir ./demos/pendulum --lobster ./lobster/bin/lobster
+            
+
+            - name: Build physics_boxes
+              run: |
+                source ./emsdk_env.sh
+                python3 build.py --entry ./demos/physics_boxes/main.lobster --out-dir ./demos/physics_boxes --lobster ./lobster/bin/lobster
+            
+            - name: Build physics_water
+              run: |
+                source ./emsdk_env.sh
+                python3 build.py --entry ./demos/physics_water/main.lobster --out-dir ./demos/physics_water --lobster ./lobster/bin/lobster
+            
+            - name: Build pythtree
+              run: |
+                source ./emsdk_env.sh
+                python3 build.py --entry ./demos/pythtree/main.lobster --out-dir ./demos/pythtree --lobster ./lobster/bin/lobster
+            
