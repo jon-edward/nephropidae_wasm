@@ -48,8 +48,7 @@ jobs:
             - name: Build pendulum
               run: |
                 source ./emsdk/emsdk_env.sh
-                python3 build.py --entry ./demos/pendulum/main.lobster --out-dir ./demos/pendulum --lobster ./lobster
-            
+                python3 build.py --entry ./demos/pendulum/main.lobster --out-dir ./demos/pendulum --lobster ./lobster            
 
             - name: Build physics_boxes
               run: |
@@ -66,8 +65,26 @@ jobs:
                 source ./emsdk/emsdk_env.sh
                 python3 build.py --entry ./demos/pythtree/main.lobster --out-dir ./demos/pythtree --lobster ./lobster
             
-            - name: Upload Pages artifact
-              uses: actions/upload-pages-artifact@v3
-              with:
-                path: "./demos"
+            - name: Setup Pages
+              id: pages
+              uses: actions/configure-pages@v3
             
+            - name: Build with Jekyll
+              uses: actions/jekyll-build-pages@v1
+              with:
+                source: ./
+                destination: ./_site
+            
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v2
+    
+    deploy:
+        environment:
+            name: github-pages
+            url: ${{steps.deployment.outputs.page_url}}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v2
